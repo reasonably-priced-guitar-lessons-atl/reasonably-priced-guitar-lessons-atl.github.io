@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reasonably Priced Guitar Lessons</title>
+
+        <!-- Custom CSS -->
+        <style type="text/css">
+            .body { 
+                width: auto; 
+            }
+        </style>
+
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <p class="my-0 py-0 text-white">🎸 Reasonably Priced Guitar Lessons</p>
+            </div>
+        </nav>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-items-center justify-content-center d-flex" style="height: 66vh;">
+                    <div class="pt-5 pt-md-0">
+                        <h1 class="text-center">Discover the joy of music</h1>
+                        <p class="text-center text-gray-200">Personalized lessons to meet you where you are at and guide you along your journey <span id="emoji-container">🎸</span></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-5" style="height:fit-content;">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSddz6_dP5xmyIm5AHptPtPJ7TCu85iqPz6tqH4bs9RXDVZ2Sw/viewform?embedded=true" 
+                        width="100%" 
+                        height="1100px" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const randomEmojis = [
+            "🎸",
+            "🎸",
+            "🎸",
+            "🎵",
+            "🎵",
+            "🎶",
+            "🎶",
+            "✨",
+            "🤘",
+            "🤙",
+            "🌈",
+            "🍄",
+            "🪶",
+            "🎼",
+            "🇺🇸",
+            "🦅",
+            "😂",
+            "😌",
+            "✌️",
+            "🎧",
+            "👂",
+            "💛",
+            "💃🏻",
+        ];
+
+        const emojiDom = document.getElementById("emoji-container");
+
+        setInterval(function(){
+            var randomEmoji = randomEmojis[Math.floor(Math.random() * randomEmojis.length)];
+            emojiDom.innerHTML = randomEmoji;
+        }, 200);
+    </script>
+</html>
+
+
